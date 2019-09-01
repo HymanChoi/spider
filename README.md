@@ -4,7 +4,7 @@
 用Node.js爬取豆瓣电影Top250数据，并简单储存到本地文件。
 
 #### 项目技术
-Node + cheerio
+Node.js + cheerio
 
 #### 安装教程
 1. 安装依赖
