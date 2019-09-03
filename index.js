@@ -38,6 +38,11 @@ function getTitles(page) {
                 Info[page + index].OtherTitles = arr;
             })
 
+            $('.grid_view .item .info .bd .star .rating_num').each(function (index, element) {
+                let $element = $(element);
+                Info[page + index].Score = $element.text();
+            })
+
             if (page < 225) {
                 page += 25;
                 i++;
