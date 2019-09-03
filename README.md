@@ -15,3 +15,7 @@ npm install/cnpm install
 ```
 node index.js
 ```
+
+#### 项目展示
+爬取到中文名称，英文名称，其他名称和评分
+[详细数据](./data/Info.json)
