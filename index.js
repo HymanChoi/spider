@@ -28,24 +28,24 @@ function getTitles(page) {
                 Info[page + index] = { "ChineseTitles": $element.text() };
             })
 
-            // 爬取英文标题
-            $('.grid_view .item .info .title:nth-child(2)').each(function (index, element) {
-                let $element = $(element);
-                Info[page + index].EnglishTitles = $element.text().replace('/', '').trim();
-            })
+            // // 爬取英文标题
+            // $('.grid_view .item .info .title:nth-child(2)').each(function (index, element) {
+            //     let $element = $(element);
+            //     Info[page + index].EnglishTitles = $element.text().replace('/', '').trim();
+            // })
 
-            // 爬取其他标题
-            $('.grid_view .item .info .other').each(function (index, element) {
-                let $element = $(element);
-                let arr = $element.text().split('/').filter(d => d.trim()).map(d => d.replace(/^\s+|\s+$/g, ""));
-                Info[page + index].OtherTitles = arr;
-            })
+            // // 爬取其他标题
+            // $('.grid_view .item .info .other').each(function (index, element) {
+            //     let $element = $(element);
+            //     let arr = $element.text().split('/').filter(d => d.trim()).map(d => d.replace(/^\s+|\s+$/g, ""));
+            //     Info[page + index].OtherTitles = arr;
+            // })
 
-            // 爬取评分
-            $('.grid_view .item .info .bd .star .rating_num').each(function (index, element) {
-                let $element = $(element);
-                Info[page + index].Score = $element.text();
-            })
+            // // 爬取评分
+            // $('.grid_view .item .info .bd .star .rating_num').each(function (index, element) {
+            //     let $element = $(element);
+            //     Info[page + index].Score = $element.text();
+            // })
 
             // 爬取各页面连接
             $('.grid_view .item .info .hd a').each(function (index, element) {
@@ -53,26 +53,29 @@ function getTitles(page) {
                 Info[page + index].Link = $element.attr('href');
             })
 
-            if (page < 225) {
-                page += 25;
-                i++;
-                getTitles(page);
-            } else {
-                console.log("Title获取完毕！");
-                console.log(Info);
-                // getInfo(Info, 0)
-                // saveData('./data/Info.json', Info);
-            }
+            getInfo(Info, 0);
+
+            // if (page < 225) {
+            //     page += 25;
+            //     i++;
+            //     getTitles(page);
+            // } else {
+            //     console.log("Title获取完毕！");
+            //     console.log(Info);
+            //     // getInfo(Info, 0)
+            //     // saveData('./data/Info.json', Info);
+            // }
         });
     });
 }
 
 function getInfo(Info, i) {
-    console.log("正在抓取第" + i + 1 + "部");
+    console.log("正在抓取第" + (i + 1) + "部电影");
+
     let arr = Info
-    let index = i
-    https.get(arr[index].Link, res => {
+    https.get(arr[i].Link, res => {
         let chunks = [];
+
         res.on('data', chunk => {
             chunks.push(chunk);
         });
@@ -84,13 +87,48 @@ function getInfo(Info, i) {
             // 抓取导演
             $('.article .subject span:nth-child(1) .attrs').each(function (index, element) {
                 let $element = $(element);
-                arr.Director = $element.text();
-                // console.log($element.text());
+                arr[i].Director = $element.text();
             })
 
-            if (index < arr.length) {
-                index++
-                getInfo(arr, index)
+            // 抓取编剧
+            $('.article .subject span:nth-child(2) .attrs').each(function (index, element) {
+                let $element = $(element);
+                arr[i].Screenwriter = $element.text();
+            })
+
+            // // 抓取演员
+            // $('.article .subject span:nth-child(3) .attrs').each(function (index, element) {
+            //     let $element = $(element);
+            //     arr[i].Actor = $element.text();
+            // })
+
+            // // 抓取类型
+            // $('.article .subject span:nth-child(4) .attrs').each(function (index, element) {
+            //     let $element = $(element);
+            //     arr[i].Type = $element.text();
+            // })
+
+            // // 抓取国家/地区
+            // $('.article .subject span:nth-child(5) .attrs').each(function (index, element) {
+            //     let $element = $(element);
+            //     arr[i].Country = $element.text();
+            // })
+
+            // // 抓取上映时间
+            // $('.article .subject span:nth-child(7) .attrs').each(function (index, element) {
+            //     let $element = $(element);
+            //     arr[i].Date = $element.text();
+            // })
+
+            // // 抓取时长
+            // $('.article .subject span:nth-child(8) .attrs').each(function (index, element) {
+            //     let $element = $(element);
+            //     arr[i].Length = $element.text();
+            // })
+
+            if (i < 24) {
+                i++;
+                getInfo(arr, i);
             } else {
                 console.log(arr)
             }
