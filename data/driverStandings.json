@@ -2013,132 +2013,132 @@
     "driver": "Charles Leclerc",
     "nationality": "MON",
     "car": "Ferrari",
-    "points": "45"
+    "points": "71"
    },
    {
     "position": "2",
+    "driver": "George Russell",
+    "nationality": "GBR",
+    "car": "Mercedes",
+    "points": "37"
+   },
+   {
+    "position": "3",
     "driver": "Carlos Sainz",
     "nationality": "ESP",
     "car": "Ferrari",
     "points": "33"
    },
    {
-    "position": "3",
-    "driver": "Max Verstappen",
-    "nationality": "NED",
-    "car": "Red Bull Racing RBPT",
-    "points": "25"
-   },
-   {
     "position": "4",
-    "driver": "George Russell",
-    "nationality": "GBR",
-    "car": "Mercedes",
-    "points": "22"
+    "driver": "Sergio Perez",
+    "nationality": "MEX",
+    "car": "Red Bull Racing RBPT",
+    "points": "30"
    },
    {
     "position": "5",
     "driver": "Lewis Hamilton",
     "nationality": "GBR",
     "car": "Mercedes",
-    "points": "16"
+    "points": "28"
    },
    {
     "position": "6",
-    "driver": "Esteban Ocon",
-    "nationality": "FRA",
-    "car": "Alpine Renault",
-    "points": "14"
+    "driver": "Max Verstappen",
+    "nationality": "NED",
+    "car": "Red Bull Racing RBPT",
+    "points": "25"
    },
    {
     "position": "7",
-    "driver": "Sergio Perez",
-    "nationality": "MEX",
-    "car": "Red Bull Racing RBPT",
-    "points": "12"
+    "driver": "Esteban Ocon",
+    "nationality": "FRA",
+    "car": "Alpine Renault",
+    "points": "20"
    },
    {
     "position": "8",
+    "driver": "Lando Norris",
+    "nationality": "GBR",
+    "car": "McLaren Mercedes",
+    "points": "16"
+   },
+   {
+    "position": "9",
     "driver": "Kevin Magnussen",
     "nationality": "DEN",
     "car": "Haas Ferrari",
     "points": "12"
    },
    {
-    "position": "9",
+    "position": "10",
     "driver": "Valtteri Bottas",
     "nationality": "FIN",
     "car": "Alfa Romeo Ferrari",
-    "points": "8"
-   },
-   {
-    "position": "10",
-    "driver": "Lando Norris",
-    "nationality": "GBR",
-    "car": "McLaren Mercedes",
-    "points": "6"
+    "points": "12"
    },
    {
     "position": "11",
-    "driver": "Yuki Tsunoda",
-    "nationality": "JPN",
-    "car": "AlphaTauri RBPT",
-    "points": "4"
+    "driver": "Daniel Ricciardo",
+    "nationality": "AUS",
+    "car": "McLaren Mercedes",
+    "points": "8"
    },
    {
     "position": "12",
     "driver": "Pierre Gasly",
     "nationality": "FRA",
     "car": "AlphaTauri RBPT",
-    "points": "4"
+    "points": "6"
    },
    {
     "position": "13",
+    "driver": "Yuki Tsunoda",
+    "nationality": "JPN",
+    "car": "AlphaTauri RBPT",
+    "points": "4"
+   },
+   {
+    "position": "14",
     "driver": "Fernando Alonso",
     "nationality": "ESP",
     "car": "Alpine Renault",
     "points": "2"
    },
    {
-    "position": "14",
+    "position": "15",
     "driver": "Guanyu Zhou",
     "nationality": "CHN",
     "car": "Alfa Romeo Ferrari",
     "points": "1"
    },
    {
-    "position": "15",
+    "position": "16",
+    "driver": "Alexander Albon",
+    "nationality": "THA",
+    "car": "Williams Mercedes",
+    "points": "1"
+   },
+   {
+    "position": "17",
     "driver": "Mick Schumacher",
     "nationality": "GER",
     "car": "Haas Ferrari",
     "points": "0"
    },
    {
-    "position": "16",
+    "position": "18",
     "driver": "Lance Stroll",
     "nationality": "CAN",
     "car": "Aston Martin Aramco Mercedes",
     "points": "0"
    },
    {
-    "position": "17",
+    "position": "19",
     "driver": "Nico Hulkenberg",
     "nationality": "GER",
     "car": "Aston Martin Aramco Mercedes",
-    "points": "0"
-   },
-   {
-    "position": "18",
-    "driver": "Alexander Albon",
-    "nationality": "THA",
-    "car": "Williams Mercedes",
-    "points": "0"
-   },
-   {
-    "position": "19",
-    "driver": "Daniel Ricciardo",
-    "nationality": "AUS",
-    "car": "McLaren Mercedes",
     "points": "0"
    },
    {

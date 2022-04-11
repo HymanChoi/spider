@@ -715,51 +715,51 @@
    {
     "position": "1",
     "team": "Ferrari",
-    "points": "78"
+    "points": "104"
    },
    {
     "position": "2",
     "team": "Mercedes",
-    "points": "38"
+    "points": "65"
    },
    {
     "position": "3",
     "team": "Red Bull Racing RBPT",
-    "points": "37"
+    "points": "55"
    },
    {
     "position": "4",
-    "team": "Alpine Renault",
-    "points": "16"
+    "team": "McLaren Mercedes",
+    "points": "24"
    },
    {
     "position": "5",
-    "team": "Haas Ferrari",
-    "points": "12"
+    "team": "Alpine Renault",
+    "points": "22"
    },
    {
     "position": "6",
     "team": "Alfa Romeo Ferrari",
-    "points": "9"
+    "points": "13"
    },
    {
     "position": "7",
-    "team": "AlphaTauri RBPT",
-    "points": "8"
+    "team": "Haas Ferrari",
+    "points": "12"
    },
    {
     "position": "8",
-    "team": "McLaren Mercedes",
-    "points": "6"
+    "team": "AlphaTauri RBPT",
+    "points": "10"
    },
    {
     "position": "9",
-    "team": "Aston Martin Aramco Mercedes",
-    "points": "0"
+    "team": "Williams Mercedes",
+    "points": "1"
    },
    {
     "position": "10",
-    "team": "Williams Mercedes",
+    "team": "Aston Martin Aramco Mercedes",
     "points": "0"
    }
   ]
