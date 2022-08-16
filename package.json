@@ -17,8 +17,16 @@
   },
   "homepage": "https://github.com/HymanChoi/Spider#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "fs": "0.0.1-security",
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
     "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
